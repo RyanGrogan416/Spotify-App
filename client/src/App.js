@@ -1,10 +1,14 @@
 import React from "react";
-import SearchBar from "./SearchBar.js";
+import Playlist from "./components/Playlist.js";
+import Navbar from "./components/Navbar.js";
+import SearchBar from "./components/SearchBar.js";
 
 function App() {
   return (
     <>
+      <Navbar />
       <SearchBar />
+      <Playlist />
     </>
   );
 }
