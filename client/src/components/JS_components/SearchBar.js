@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const SearchBar = ({ placeholder, data }) => {
   const [query, setQuery] = useState("");
@@ -12,7 +12,7 @@ const SearchBar = ({ placeholder, data }) => {
     <>
       <input
         type="text"
-        placeholder={placeholder}
+        placeholder="search"
         value={query}
         onChange={handleInputChange}
       />
