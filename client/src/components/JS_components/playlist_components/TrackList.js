@@ -25,7 +25,15 @@ const TrackList = () => {
     <DragDropContext onDragEnd={handleDragEnd}>
       <Droppable droppableId="playlist">
         {(provided) => (
-          <div {...provided.droppableProps} ref={provided.innerRef}>
+          <div
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              width: "100%",
+            }}
+          >
             {tracks.map((track, index) => (
               <Draggable key={track.id} draggableId={track.id} index={index}>
                 {(provided) => (
@@ -38,6 +46,10 @@ const TrackList = () => {
                       margin: "0 0 8px 0",
                       backgroundColor: "#fff",
                       border: "1px solid #ddd",
+                      width: "100%",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      display: "flex",
                       ...provided.draggableProps.style,
                     }}
                   >

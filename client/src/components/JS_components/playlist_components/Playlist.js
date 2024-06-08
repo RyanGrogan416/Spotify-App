@@ -6,13 +6,44 @@ export default function Playlist() {
   const [title, setTitle] = useState("My Playlist");
 
   return (
-    <>
-      <div className="Title-container">
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignItems: "center",
+        padding: "10px",
+        borderBottom: "1px solid lightgray",
+        backgroundColor: "purple",
+        width: "100%",
+        height: "100%",
+        float: "right",
+      }}
+    >
+      <div
+        className="Title-container"
+        style={{
+          alignItems: "center",
+          padding: "10px",
+          borderBottom: "1px solid lightgray",
+          backgroundColor: "white",
+          width: "100%",
+        }}
+      >
         <EditableTitle title={title} setTitle={setTitle} />
       </div>
-      <div className="playlist-container">
+      <div
+        className="playlist-container"
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "10px",
+          backgroundColor: "white",
+        }}
+      >
         <TrackList />
       </div>
-    </>
+    </div>
   );
 }

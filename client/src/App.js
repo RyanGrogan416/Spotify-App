@@ -9,16 +9,36 @@ import {
   Card,
 } from "react-bootstrap";
 import Playlist from "./components/JS_components/playlist_components/Playlist.js";
-import Navbar from "./components/JS_components/Navbar.js";
-import SearchBar from "./components/JS_components/SearchBar.js";
+import SearchBar from "./components/JS_components/SeachBar_components/SearchBar.js";
 
 function App() {
   return (
-    <>
-      <SearchBar />
-      <Navbar />
-      <Playlist />
-    </>
+    <Container
+      style={{
+        display: "flex",
+      }}
+    >
+      <div
+        className="SearchBar-container"
+        style={{
+          top: "25px",
+          width: "50%",
+          height: "100vh",
+        }}
+      >
+        <SearchBar />
+      </div>
+      <div
+        className="Playlist-container"
+        style={{
+          top: "25px",
+          width: "50%",
+          height: "100vh",
+        }}
+      >
+        <Playlist />
+      </div>
+    </Container>
   );
 }
 
