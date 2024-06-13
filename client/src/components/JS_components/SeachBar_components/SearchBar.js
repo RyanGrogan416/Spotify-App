@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import SearchResults from "./SearchResults";
 
-const SearchBar = ({ placeholder, data }) => {
+const SearchBar = () => {
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
@@ -20,11 +21,9 @@ const SearchBar = ({ placeholder, data }) => {
           padding: "12px 20px",
           margin: "8px 0",
           border: "none",
-          border: "1px solid #ccc",
           borderRadius: "4px",
           boxSizing: "border-box",
           backgroundColor: "black",
-          border: "none",
           outline: "none",
           borderBottom: "2px solid white",
           fontWeight: "bold",
@@ -35,17 +34,9 @@ const SearchBar = ({ placeholder, data }) => {
           textDecoration: "none",
           letterSpacing: "1px",
           transition: "all 0.5s ease",
-          ":hover": {
-            color: "red",
-          },
-          ":focus": {
-            color: "red",
-          },
-          ":active": {
-            color: "red",
-          },
         }}
       />
+      <SearchResults query={query} />
     </>
   );
 };
