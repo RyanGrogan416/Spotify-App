@@ -20,7 +20,7 @@ export default function Playlist() {
       }}
     >
       <div
-        className="Title-container"
+        className="Title"
         style={{
           alignItems: "center",
           padding: "10px",
@@ -32,7 +32,7 @@ export default function Playlist() {
         <EditableTitle title={title} setTitle={setTitle} />
       </div>
       <div
-        className="playlist-container"
+        className="playlist"
         style={{
           width: "100%",
           display: "flex",

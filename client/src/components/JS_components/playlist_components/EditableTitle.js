@@ -37,15 +37,19 @@ const EditableTitle = ({ title, setTitle }) => {
             color: "grey", // Muted grey text
             backgroundColor: "transparent", // Transparent background
             border: "none",
-            outline: "2px solid grey", // Using outline instead of border
-            width: "100%", // Ensure the input takes the full width
+            outline: "none", // Using outline instead of border
+            width: "100%",
+            height: "50px", // Ensure the input takes the full width
             padding: 0, // Match the padding to default <h1>
             margin: 0, // Match the margin to default <h1>
           }}
           autoFocus
         />
       ) : (
-        <h1 onDoubleClick={handleDoubleClick} style={{ cursor: "pointer" }}>
+        <h1
+          onDoubleClick={handleDoubleClick}
+          style={{ cursor: "pointer", height: "50px", margin: 0, padding: 0 }}
+        >
           {title}
         </h1>
       )}

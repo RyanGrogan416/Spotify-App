@@ -3,7 +3,7 @@ import React from "react";
 const SearchResults = ({ query }) => {
   return (
     <div>
-      <p>{console.logquery}</p>
+      <p>{query}</p>
     </div>
   );
 };

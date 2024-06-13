@@ -1,19 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Container,
-  InputGroup,
-  FormControl,
-  Button,
-  Row,
-  Card,
-} from "react-bootstrap";
 import Playlist from "./components/JS_components/playlist_components/Playlist.js";
 import SearchBar from "./components/JS_components/SeachBar_components/SearchBar.js";
 
 function App() {
   return (
-    <Container
+    <div
       style={{
         display: "flex",
       }}
@@ -38,7 +30,7 @@ function App() {
       >
         <Playlist />
       </div>
-    </Container>
+    </div>
   );
 }
 
