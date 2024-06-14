@@ -18,7 +18,7 @@ const SearchBar = ({ placeholder, data }) => {
         style={{
           width: "100%",
           padding: "12px 20px",
-          margin: "8px 0",
+          margin: "25% 0",
           border: "none",
           border: "1px solid #ccc",
           borderRadius: "4px",
@@ -35,15 +35,6 @@ const SearchBar = ({ placeholder, data }) => {
           textDecoration: "none",
           letterSpacing: "1px",
           transition: "all 0.5s ease",
-          ":hover": {
-            color: "red",
-          },
-          ":focus": {
-            color: "red",
-          },
-          ":active": {
-            color: "red",
-          },
         }}
       />
     </>

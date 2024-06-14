@@ -8,15 +8,14 @@ export default function Playlist() {
   return (
     <div
       style={{
-        display: "flex",
+        display: "flexbox",
+        alignItems: "flex-start",
         flexWrap: "wrap",
-        alignItems: "center",
         padding: "10px",
         borderBottom: "1px solid lightgray",
         backgroundColor: "purple",
         width: "100%",
         height: "100%",
-        float: "right",
       }}
     >
       <div
@@ -24,6 +23,7 @@ export default function Playlist() {
         style={{
           alignItems: "center",
           padding: "10px",
+          margin: "25% 0",
           borderBottom: "1px solid lightgray",
           backgroundColor: "white",
           width: "100%",

@@ -1,21 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Container,
-  InputGroup,
-  FormControl,
-  Button,
-  Row,
-  Card,
-} from "react-bootstrap";
 import Playlist from "./components/JS_components/playlist_components/Playlist.js";
 import SearchBar from "./components/JS_components/SeachBar_components/SearchBar.js";
 
 function App() {
   return (
-    <Container
+    <div
       style={{
         display: "flex",
+        backgroundColor: "pink",
+        width: "100%",
+        height: "100vh",
       }}
     >
       <div
@@ -38,7 +33,7 @@ function App() {
       >
         <Playlist />
       </div>
-    </Container>
+    </div>
   );
 }
 
