@@ -1,0 +1,14 @@
+.page_grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(480, 1fr));
+}
+
+.card_tall {
+  grid-row: span 2 / auto;
+}
+
+.card_wide {
+  grid-column: span 2 / auto;
+}

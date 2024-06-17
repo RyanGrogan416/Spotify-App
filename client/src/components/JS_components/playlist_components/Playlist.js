@@ -1,25 +1,14 @@
 import { React, useState } from "react";
 import TrackList from "./TrackList";
 import EditableTitle from "./EditableTitle";
+import style from "/workspaces/Spotify-App/client/src/components/CSS_components/grid.css";
 
 export default function Playlist() {
   const [title, setTitle] = useState("My Playlist");
 
   return (
-    <div
-      style={{
-        display: "flexbox",
-        alignItems: "flex-start",
-        flexWrap: "wrap",
-        padding: "10px",
-        borderBottom: "1px solid lightgray",
-        backgroundColor: "purple",
-        width: "100%",
-        height: "100%",
-      }}
-    >
+    <div className={style.page_grid}>
       <div
-        className="Title"
         style={{
           alignItems: "center",
           padding: "10px",
@@ -32,7 +21,6 @@ export default function Playlist() {
         <EditableTitle title={title} setTitle={setTitle} />
       </div>
       <div
-        className="playlist"
         style={{
           width: "100%",
           display: "flex",
