@@ -17,10 +17,10 @@ function App() {
       <div style={style.searchresults}>
         <SearchResults />
       </div>
-      <div>
+      <div style={style.editableTitle}>
         <EditableTitle title={title} setTitle={setTitle} />
       </div>
-      <div>
+      <div style={style.tracklist}>
         <TrackList />
       </div>
     </div>
