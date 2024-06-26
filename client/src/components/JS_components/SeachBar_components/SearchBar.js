@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
-import SearchResults from "./SearchResults";
 
-const SearchBar = () => {
-  const [query, setQuery] = useState("");
+const SearchBar = ({query, setQuery}) => {
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
@@ -36,7 +33,6 @@ const SearchBar = () => {
           transition: "all 0.5s ease",
         }}
       />
-      <SearchResults query={query} />
     </>
   );
 };

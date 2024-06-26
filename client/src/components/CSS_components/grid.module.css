@@ -1,0 +1,35 @@
+.app {
+  display: grid;
+  gap: 1rem;
+  background-color: pink;
+
+  grid-template-areas:
+    "searchbar editableTitle"
+    "searchresults tracklist";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card_tall {
+  grid-row: span 2 / auto;
+}
+
+.card_wide {
+  grid-column: span 2 / auto;
+}
+
+.app > .searchbar {
+  grid-area: searchbar;
+}
+
+.app > .searchresults {
+  grid-area: searchresults;
+}
+
+.app > .editableTitle {
+  grid-area: editableTitle;
+}
+
+.app > .tracklist {
+  grid-area: tracklist;
+}

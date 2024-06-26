@@ -4,23 +4,24 @@ import TrackList from "./components/JS_components/playlist_components/TrackList.
 import EditableTitle from "./components/JS_components/playlist_components/EditableTitle.js";
 import SearchBar from "./components/JS_components/SeachBar_components/SearchBar.js";
 import SearchResults from "./components/JS_components/SeachBar_components/SearchResults.js";
-import style from "./components/CSS_components/grid.css";
+import styles from "./components/CSS_components/grid.module.css";
 
 function App() {
   const [title, setTitle] = useState("My Playlist");
+  const [query, setQuery] = useState("");
 
   return (
-    <div style={style.app}>
-      <div style={style.searchbar}>
-        <SearchBar />
+    <div className={styles.app}>
+      <div className={styles.searchbar}>
+        <SearchBar query={query} setQuery={setQuery} />
       </div>
-      <div style={style.searchresults}>
-        <SearchResults />
+      <div className={styles.searchresults}>
+        <SearchResults query={query} setQuery={setQuery} />
       </div>
-      <div style={style.editableTitle}>
+      <div className={styles.editableTitle}>
         <EditableTitle title={title} setTitle={setTitle} />
       </div>
-      <div style={style.tracklist}>
+      <div className={styles.tracklist}>
         <TrackList />
       </div>
     </div>
